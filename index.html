@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Mungunzaya Enkhtuya">
+    <meta name="description" content="WDD 231 - Course Home Page">
+    <title>Home Page - WDD 231</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/course.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img src="images/course-logo-02.svg" alt="logo" width="63" height="65">
+        <span>Mungunzaya's Hub</span>
+        <button id="ham-btn" class="hamburger"></button>
+    </header>
+    <nav id="nav-bar" class="navigation">
+        <ul>
+            <li class="current"><a href="index.html">Home</a></li>
+            <li><a href="#">Chamber Project</a></li>
+            <li><a href="#">Final Project</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Home</h1>
+        <div class="about">
+            <h2>About Me</h2>
+            <p>My name is Mungunzaya, which means "a fortune filled with money". I was born and raised in Mongolia where my name came from. I love creativity and logic, so that's why I chose to learn about programming. It has been a fun journey so far learning these new programming languages.</p>
+        </div>
+        <div class="photo">
+            <h2>Student Photo</h2>
+            <div>
+                <img src="images/profile.jpg" alt="Mungunzaya Profile" width="200">
+            </div>
+        </div>
+        <div class="courses">
+            <h2>Web Certificate Courses</h2>
+            <div class="buttons">
+                <button id="all" name="all-button">All</button>
+                <button id="wdd" name="wdd-button">WDD</button>
+                <button id="cse" name="cse-button">CSE</button>
+            </div>
+            <div id="course" class="course-name"></div>
+        </div>
+    </main>
+    <footer>
+        <div class="icons">
+            <a href="www.linkedin.com/in/mungunzaya-enkhtuya-8ab663309"><img src="images/linkedin-icon.svg" alt="linkedin logo" width="30"></a>
+            <a href="https://github.com/Mungunzaya-e"><img src="images/github-icon.svg" alt="github logo" width="30"></a>
+            <a href="https://www.facebook.com/mungunzaya.tuya"><img src="images/facebook-icon.svg" alt="facebook logo" width="30"></a>
+        </div>
+        <p>©<span id="currentyear"></span> • Mungunzaya Enkhtuya • Mongolia</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

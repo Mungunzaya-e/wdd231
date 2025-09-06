@@ -1,0 +1,166 @@
+/* color: #c2b59b */
+
+* {
+    font-family: Roboto, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 24px auto 44px;
+    align-items: center;
+    column-gap: 10px;
+    padding: 10px 0 10px 10px;
+    border-bottom: solid 2px #c2b59b;
+}
+
+header img {
+    width: 100%;
+    height: auto;
+}
+
+header span {
+    font-size: 1.2rem;
+}
+
+.hamburger {
+    background: none;
+    border: none;
+    color: #95876a;
+    cursor: pointer;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2rem;
+}
+
+.hamburger::before {
+    content: "\2630";
+}
+
+.hamburger.show::before {
+    content: "\00D7";
+}
+
+.navigation {
+    display: none;
+}
+
+.navigation.show {
+    display: flex;
+    width: 100%;
+    background-color: #f0e7d6;
+}
+
+.navigation.show ul {
+    margin: 0;
+    width: 100%;
+    padding: 0;
+}
+
+.navigation.show ul li {
+    position: relative;
+    list-style: none;
+
+}
+
+.navigation.show ul li a {
+    display: block;
+    padding: 15px 44px;
+    text-decoration: none;
+    font-size: 1.1rem;
+    color: #232;
+    width: 100%;
+}
+
+.navigation.show ul li a:hover {
+    background-color: #e2d6be;
+}
+
+h1 {
+    text-align: center;
+}
+
+.about, .photo, .courses {
+    width: 90%;
+    margin: auto;
+    margin-bottom: 2em;
+}
+
+h2 {
+    text-align: center;
+    background-color: #95876a;
+    padding: 10px;
+    color: #fff;
+    font-weight: 500;
+    margin: 0;
+}
+
+.about p, .photo div {
+    padding: 20px;
+    background-color: #f0e7d6;
+    margin: 0;
+}
+
+.photo div {
+    text-align: center;
+}
+
+.photo img {
+    border-radius: 10px;
+    box-shadow: 4px 4px 4px 0 #95876a;
+}
+
+.courses div {
+    padding: 20px;
+    text-align: center;
+    padding-bottom: 0;
+}
+
+.buttons button {
+    width: 100px;
+    margin: 0 10px;
+    background-color: #f0e7d6;
+    border: solid 1px #95876a;
+    padding: 10px;
+    font-size: 120%;
+    border-radius: 10px;
+    transition: 0.15s;
+}
+
+.buttons button:hover {
+    cursor: pointer;
+    background-color: #e2d6be;
+}
+
+.buttons button:active {
+    background-color: #c2b59b;
+    color: #fff;
+}
+
+footer {
+    background-color: #50422f;
+    padding: 20px;
+}
+
+footer p {
+    color: #fff;
+    text-align: center;
+}
+
+footer div {
+    text-align: center;
+}
+
+footer a {
+    margin: 0 10px;
+}
+
+.course-name div {
+    background-color: #f0e7d6;
+    padding: 5px;
+    margin: 10px 0;
+    border-radius: 10px;
+}
