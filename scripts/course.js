@@ -100,6 +100,9 @@ allBtn.addEventListener('click', () => {
         courses.forEach(item => {
             const divElement = document.createElement('div');
             divElement.classList.add('course-card');
+            divElement.style.backgroundColor = item.completed
+                    ? '#ccf4a2ff'
+                    : '#f0e7d6';
 
             const nameParagraph = document.createElement('p');
             nameParagraph.textContent = item.completed
@@ -139,6 +142,9 @@ wddBtn.addEventListener('click', () => {
             if(item.subject === 'WDD') {
                 const divElement = document.createElement('div');
                 divElement.classList.add('course-card');
+                divElement.style.backgroundColor = item.completed
+                    ? '#ccf4a2ff'
+                    : '#f0e7d6';
 
                 const nameParagraph = document.createElement('p');
                 nameParagraph.textContent = item.completed
@@ -178,6 +184,9 @@ cseBtn.addEventListener('click', () => {
             if(item.subject === 'CSE') {
                 const divElement = document.createElement('div');
                 divElement.classList.add('course-card');
+                divElement.style.backgroundColor = item.completed
+                    ? '#ccf4a2ff'
+                    : '#f0e7d6';
 
                 const nameParagraph = document.createElement('p');
                 nameParagraph.textContent = item.completed
